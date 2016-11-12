@@ -14,6 +14,16 @@
 		ECBCB14E1DD6F4AD008EA184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB14D1DD6F4AD008EA184 /* AppDelegate.swift */; };
 		ECBCB1521DD6F5AC008EA184 /* MTCHomeListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB1511DD6F5AC008EA184 /* MTCHomeListCellView.swift */; };
 		ECBCB1541DD6FD50008EA184 /* MTCNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB1531DD6FD50008EA184 /* MTCNewViewController.swift */; };
+		ECBCB1561DD76EBB008EA184 /* MTCNewAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB1551DD76EBA008EA184 /* MTCNewAppViewController.swift */; };
+		ECBCB1711DD77818008EA184 /* Domain+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB1691DD77818008EA184 /* Domain+CoreDataClass.swift */; };
+		ECBCB1721DD77818008EA184 /* Domain+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB16A1DD77818008EA184 /* Domain+CoreDataProperties.swift */; };
+		ECBCB1731DD77818008EA184 /* Features+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB16B1DD77818008EA184 /* Features+CoreDataClass.swift */; };
+		ECBCB1741DD77818008EA184 /* Features+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB16C1DD77818008EA184 /* Features+CoreDataProperties.swift */; };
+		ECBCB1751DD77818008EA184 /* Projects+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB16D1DD77818008EA184 /* Projects+CoreDataClass.swift */; };
+		ECBCB1761DD77818008EA184 /* Projects+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB16E1DD77818008EA184 /* Projects+CoreDataProperties.swift */; };
+		ECBCB1771DD77818008EA184 /* Scenarios+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB16F1DD77818008EA184 /* Scenarios+CoreDataClass.swift */; };
+		ECBCB1781DD77818008EA184 /* Scenarios+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB1701DD77818008EA184 /* Scenarios+CoreDataProperties.swift */; };
+		ECBCB17B1DD778F5008EA184 /* MTCDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB17A1DD778F5008EA184 /* MTCDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		ECBCB14D1DD6F4AD008EA184 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECBCB1511DD6F5AC008EA184 /* MTCHomeListCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCHomeListCellView.swift; sourceTree = "<group>"; };
 		ECBCB1531DD6FD50008EA184 /* MTCNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCNewViewController.swift; sourceTree = "<group>"; };
+		ECBCB1551DD76EBA008EA184 /* MTCNewAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCNewAppViewController.swift; sourceTree = "<group>"; };
+		ECBCB1691DD77818008EA184 /* Domain+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Domain+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ECBCB16A1DD77818008EA184 /* Domain+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Domain+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ECBCB16B1DD77818008EA184 /* Features+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Features+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ECBCB16C1DD77818008EA184 /* Features+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Features+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ECBCB16D1DD77818008EA184 /* Projects+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Projects+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ECBCB16E1DD77818008EA184 /* Projects+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Projects+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ECBCB16F1DD77818008EA184 /* Scenarios+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scenarios+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ECBCB1701DD77818008EA184 /* Scenarios+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scenarios+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ECBCB17A1DD778F5008EA184 /* MTCDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 		ECBCB12A1DD6EC08008EA184 /* MTCheckList */ = {
 			isa = PBXGroup;
 			children = (
+				ECBCB1791DD778D4008EA184 /* Shared */,
 				ECBCB1491DD6F482008EA184 /* AppDelegate */,
 				ECBCB1411DD6F41D008EA184 /* DataModel */,
 				ECBCB1401DD6F40F008EA184 /* Assets */,
@@ -73,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				ECBCB1471DD6F468008EA184 /* MTCHomeViewController.swift */,
+				ECBCB1551DD76EBA008EA184 /* MTCNewAppViewController.swift */,
 				ECBCB1531DD6FD50008EA184 /* MTCNewViewController.swift */,
 			);
 			path = ViewController;
@@ -105,6 +127,14 @@
 		ECBCB1411DD6F41D008EA184 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				ECBCB1691DD77818008EA184 /* Domain+CoreDataClass.swift */,
+				ECBCB16A1DD77818008EA184 /* Domain+CoreDataProperties.swift */,
+				ECBCB16B1DD77818008EA184 /* Features+CoreDataClass.swift */,
+				ECBCB16C1DD77818008EA184 /* Features+CoreDataProperties.swift */,
+				ECBCB16D1DD77818008EA184 /* Projects+CoreDataClass.swift */,
+				ECBCB16E1DD77818008EA184 /* Projects+CoreDataProperties.swift */,
+				ECBCB16F1DD77818008EA184 /* Scenarios+CoreDataClass.swift */,
+				ECBCB1701DD77818008EA184 /* Scenarios+CoreDataProperties.swift */,
 				ECBCB14A1DD6F4A3008EA184 /* MTCheckList.xcdatamodeld */,
 			);
 			path = DataModel;
@@ -116,6 +146,14 @@
 				ECBCB14D1DD6F4AD008EA184 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		ECBCB1791DD778D4008EA184 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCB17A1DD778F5008EA184 /* MTCDataManager.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,11 +229,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBCB1561DD76EBB008EA184 /* MTCNewAppViewController.swift in Sources */,
+				ECBCB1731DD77818008EA184 /* Features+CoreDataClass.swift in Sources */,
 				ECBCB1521DD6F5AC008EA184 /* MTCHomeListCellView.swift in Sources */,
+				ECBCB1711DD77818008EA184 /* Domain+CoreDataClass.swift in Sources */,
+				ECBCB1771DD77818008EA184 /* Scenarios+CoreDataClass.swift in Sources */,
+				ECBCB17B1DD778F5008EA184 /* MTCDataManager.swift in Sources */,
 				ECBCB14E1DD6F4AD008EA184 /* AppDelegate.swift in Sources */,
 				ECBCB1541DD6FD50008EA184 /* MTCNewViewController.swift in Sources */,
+				ECBCB1751DD77818008EA184 /* Projects+CoreDataClass.swift in Sources */,
+				ECBCB1721DD77818008EA184 /* Domain+CoreDataProperties.swift in Sources */,
 				ECBCB14C1DD6F4A3008EA184 /* MTCheckList.xcdatamodeld in Sources */,
+				ECBCB1741DD77818008EA184 /* Features+CoreDataProperties.swift in Sources */,
 				ECBCB1481DD6F468008EA184 /* MTCHomeViewController.swift in Sources */,
+				ECBCB1761DD77818008EA184 /* Projects+CoreDataProperties.swift in Sources */,
+				ECBCB1781DD77818008EA184 /* Scenarios+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +398,7 @@
 				ECBCB13C1DD6EC08008EA184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

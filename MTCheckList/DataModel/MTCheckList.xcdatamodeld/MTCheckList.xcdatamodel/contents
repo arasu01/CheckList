@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Domain" representedClassName=".Domain" syncable="YES">
+        <attribute name="domainName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="features" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Features" syncable="YES"/>
+    </entity>
+    <entity name="Features" representedClassName=".Features" syncable="YES">
+        <attribute name="featureName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="scenarios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scenarios" syncable="YES"/>
+    </entity>
+    <entity name="Projects" representedClassName=".Projects" syncable="YES">
+        <attribute name="projectName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="versionNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="features" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Features" syncable="YES"/>
+        <relationship name="scenarios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scenarios" syncable="YES"/>
+    </entity>
+    <entity name="Scenarios" representedClassName=".Scenarios" syncable="YES">
+        <attribute name="scenarioDescription" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Features" positionX="-234" positionY="-108" width="128" height="73"/>
+        <element name="Scenarios" positionX="-324" positionY="63" width="128" height="58"/>
+        <element name="Domain" positionX="-20" positionY="-162" width="128" height="73"/>
+        <element name="Projects" positionX="25" positionY="-0" width="128" height="103"/>
+    </elements>
 </model>

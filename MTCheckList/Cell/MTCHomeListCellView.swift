@@ -12,7 +12,6 @@ class MTCHomeListCellView: NSTableCellView {
 
     static let kCellIdentifier = "MTCHomeListCellViewIdentifier"
     
-    @IBOutlet var homeImageView: NSImageView!
     @IBOutlet var homeListName: NSTextField!
 
     override func draw(_ dirtyRect: NSRect) {

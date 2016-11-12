@@ -27,6 +27,8 @@ class MTCHomeViewController: NSViewController, NSTableViewDataSource, NSTableVie
 
         platformArray = ["iOS", "Android", "Web"]
         projectArray = ["Controllex-iOS", "Controllex-Android"]
+        segmentControl.selectedSegment = kPlatformIndex
+        segmentControlValueChanged(segmentControl)
     }
 
     override var representedObject: Any? {
@@ -39,11 +41,17 @@ class MTCHomeViewController: NSViewController, NSTableViewDataSource, NSTableVie
     // MARK:- Custom Action Methods
 
     @IBAction func segmentControlValueChanged(_ sender: AnyObject) {
+        if segmentControl.selectedSegment == kPlatformIndex {
+            self.addNewButton.isHidden = true
+        } else if segmentControl.selectedSegment == kProjectIndex {
+            self.addNewButton.isHidden = false
+        }
+
         tableView.reloadData()
     }
     
     @IBAction func addNewButtonPressed(_ sender: AnyObject) {
-        performSegue(withIdentifier: "MTCNewViewController", sender: self)
+        performSegue(withIdentifier: MTCNewAppViewController.kCellIdentifier, sender: self)
     }
  
     
@@ -68,7 +76,6 @@ class MTCHomeViewController: NSViewController, NSTableViewDataSource, NSTableVie
             detailsValue = projectArray[row]
         }
         cell.homeListName.stringValue = detailsValue
-        cell.homeListName.backgroundColor = NSColor.red
         return cell
 
     }

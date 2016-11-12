@@ -15,6 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        saveDummyDetails()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -166,6 +167,32 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // If we got here, it is time to quit.
         return .terminateNow
     }
+    
 
+    // MARK:- Custom Methods
+
+    func saveDummyDetails () {
+        let array = ["iOS", "Android", "Web"]
+        for item in array {
+            let domain = NSEntityDescription.insertNewObject(forEntityName: "Domain", into: managedObjectContext) as! Domain
+            domain.domainName = item
+            
+            let features = NSEntityDescription.insertNewObject(forEntityName: "Features", into: managedObjectContext) as! Features
+            features.featureName = "Login"
+            
+            let scenarios = NSEntityDescription.insertNewObject(forEntityName: "Scenarios", into: managedObjectContext) as! Scenarios
+            scenarios.scenarioDescription = "Check email validation is done."
+            
+            features.scenarios = NSSet(array: [scenarios])
+            domain.features = NSSet(array: [features])
+            
+            do {
+                try managedObjectContext.save()
+            } catch {
+                //do nothing
+            }
+        }
+
+    }
 }
 

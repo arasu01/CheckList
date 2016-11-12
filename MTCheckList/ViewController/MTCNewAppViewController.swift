@@ -1,5 +1,5 @@
 //
-//  MTCNewViewController.swift
+//  MTCNewAppViewController.swift
 //  MTCheckList
 //
 //  Created by Yogesh Murugesh on 12/11/16.
@@ -8,14 +8,15 @@
 
 import Cocoa
 
-class MTCNewViewController: NSViewController {    
+class MTCNewAppViewController: NSViewController {
 
-    @IBOutlet var featureNameField: NSTextField!
-    @IBOutlet var featureDescriptionTextField: NSTextView!
-    @IBOutlet var tagsField: NSTextField!
+    static let kCellIdentifier = "MTCNewAppViewController"
+
+    @IBOutlet var appName: NSTextField!
+    @IBOutlet var tableView: NSTableView!
+    @IBOutlet var addNewButton: NSButton!
     @IBOutlet var cancelButton: NSButton!
-    @IBOutlet var saveButton: NSButton!
-    
+
     // MARK:- View Life Cycle
 
     override func viewDidLoad() {
@@ -26,11 +27,12 @@ class MTCNewViewController: NSViewController {
     
     // MARK:- Custom Action Methods
 
+    @IBAction func addNewButtonPressed(_ sender: AnyObject) {
+        self.dismiss(sender)
+    }
+    
     @IBAction func cancelButtonPressed(_ sender: AnyObject) {
         self.dismiss(sender)
     }
     
-    @IBAction func saveButtonPressed(_ sender: AnyObject) {
-        self.dismiss(sender)
-    }
 }
