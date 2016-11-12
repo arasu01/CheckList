@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECBCB1431DD6F453008EA184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECBCB1421DD6F453008EA184 /* Assets.xcassets */; };
+		ECBCB1461DD6F45E008EA184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECBCB1441DD6F45E008EA184 /* Main.storyboard */; };
+		ECBCB1481DD6F468008EA184 /* MTCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB1471DD6F468008EA184 /* MTCHomeViewController.swift */; };
+		ECBCB14C1DD6F4A3008EA184 /* MTCheckList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB14A1DD6F4A3008EA184 /* MTCheckList.xcdatamodeld */; };
+		ECBCB14E1DD6F4AD008EA184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB14D1DD6F4AD008EA184 /* AppDelegate.swift */; };
+		ECBCB1521DD6F5AC008EA184 /* MTCHomeListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB1511DD6F5AC008EA184 /* MTCHomeListCellView.swift */; };
+		ECBCB1541DD6FD50008EA184 /* MTCNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB1531DD6FD50008EA184 /* MTCNewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ECBCB1281DD6EC08008EA184 /* MTCheckList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTCheckList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECBCB1371DD6EC08008EA184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECBCB1421DD6F453008EA184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECBCB1451DD6F45E008EA184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECBCB1471DD6F468008EA184 /* MTCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCHomeViewController.swift; sourceTree = "<group>"; };
+		ECBCB14B1DD6F4A3008EA184 /* MTCheckList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTCheckList.xcdatamodel; sourceTree = "<group>"; };
+		ECBCB14D1DD6F4AD008EA184 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECBCB1511DD6F5AC008EA184 /* MTCHomeListCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCHomeListCellView.swift; sourceTree = "<group>"; };
+		ECBCB1531DD6FD50008EA184 /* MTCNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCNewViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECBCB1251DD6EC08008EA184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECBCB11F1DD6EC08008EA184 = {
+			isa = PBXGroup;
+			children = (
+				ECBCB12A1DD6EC08008EA184 /* MTCheckList */,
+				ECBCB1291DD6EC08008EA184 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECBCB1291DD6EC08008EA184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCB1281DD6EC08008EA184 /* MTCheckList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECBCB12A1DD6EC08008EA184 /* MTCheckList */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCB1491DD6F482008EA184 /* AppDelegate */,
+				ECBCB1411DD6F41D008EA184 /* DataModel */,
+				ECBCB1401DD6F40F008EA184 /* Assets */,
+				ECBCB13F1DD6F3FA008EA184 /* UI */,
+				ECBCB13E1DD6F3EC008EA184 /* Cell */,
+				ECBCB13D1DD6F3E0008EA184 /* ViewController */,
+				ECBCB1371DD6EC08008EA184 /* Info.plist */,
+			);
+			path = MTCheckList;
+			sourceTree = "<group>";
+		};
+		ECBCB13D1DD6F3E0008EA184 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCB1471DD6F468008EA184 /* MTCHomeViewController.swift */,
+				ECBCB1531DD6FD50008EA184 /* MTCNewViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ECBCB13E1DD6F3EC008EA184 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCB1511DD6F5AC008EA184 /* MTCHomeListCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ECBCB13F1DD6F3FA008EA184 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCB1441DD6F45E008EA184 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ECBCB1401DD6F40F008EA184 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCB1421DD6F453008EA184 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		ECBCB1411DD6F41D008EA184 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCB14A1DD6F4A3008EA184 /* MTCheckList.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		ECBCB1491DD6F482008EA184 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				ECBCB14D1DD6F4AD008EA184 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECBCB1271DD6EC08008EA184 /* MTCheckList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECBCB13A1DD6EC08008EA184 /* Build configuration list for PBXNativeTarget "MTCheckList" */;
+			buildPhases = (
+				ECBCB1241DD6EC08008EA184 /* Sources */,
+				ECBCB1251DD6EC08008EA184 /* Frameworks */,
+				ECBCB1261DD6EC08008EA184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTCheckList;
+			productName = MTCheckList;
+			productReference = ECBCB1281DD6EC08008EA184 /* MTCheckList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECBCB1201DD6EC08008EA184 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MTC;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Mallow Technologies Private Limited";
+				TargetAttributes = {
+					ECBCB1271DD6EC08008EA184 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3RHR7K3FP7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ECBCB1231DD6EC08008EA184 /* Build configuration list for PBXProject "MTCheckList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECBCB11F1DD6EC08008EA184;
+			productRefGroup = ECBCB1291DD6EC08008EA184 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECBCB1271DD6EC08008EA184 /* MTCheckList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECBCB1261DD6EC08008EA184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBCB1431DD6F453008EA184 /* Assets.xcassets in Resources */,
+				ECBCB1461DD6F45E008EA184 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECBCB1241DD6EC08008EA184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBCB1521DD6F5AC008EA184 /* MTCHomeListCellView.swift in Sources */,
+				ECBCB14E1DD6F4AD008EA184 /* AppDelegate.swift in Sources */,
+				ECBCB1541DD6FD50008EA184 /* MTCNewViewController.swift in Sources */,
+				ECBCB14C1DD6F4A3008EA184 /* MTCheckList.xcdatamodeld in Sources */,
+				ECBCB1481DD6F468008EA184 /* MTCHomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ECBCB1441DD6F45E008EA184 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECBCB1451DD6F45E008EA184 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECBCB1381DD6EC08008EA184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECBCB1391DD6EC08008EA184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		ECBCB13B1DD6EC08008EA184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3RHR7K3FP7;
+				INFOPLIST_FILE = MTCheckList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallowtech.MTCheckList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ECBCB13C1DD6EC08008EA184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3RHR7K3FP7;
+				INFOPLIST_FILE = MTCheckList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mallowtech.MTCheckList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECBCB1231DD6EC08008EA184 /* Build configuration list for PBXProject "MTCheckList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBCB1381DD6EC08008EA184 /* Debug */,
+				ECBCB1391DD6EC08008EA184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECBCB13A1DD6EC08008EA184 /* Build configuration list for PBXNativeTarget "MTCheckList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBCB13B1DD6EC08008EA184 /* Debug */,
+				ECBCB13C1DD6EC08008EA184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECBCB14A1DD6F4A3008EA184 /* MTCheckList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECBCB14B1DD6F4A3008EA184 /* MTCheckList.xcdatamodel */,
+			);
+			currentVersion = ECBCB14B1DD6F4A3008EA184 /* MTCheckList.xcdatamodel */;
+			path = MTCheckList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECBCB1201DD6EC08008EA184 /* Project object */;
+}
