@@ -17,20 +17,24 @@ class MTCHomeViewController: NSViewController, NSTableViewDataSource, NSTableVie
     @IBOutlet var tableView: NSTableView!
     @IBOutlet var addNewButton: NSButton!
     
-    var platformArray = [String]()
-    var projectArray = [String]()
+    var domainArray = [Domain]()
+    var projectsArray = [Projects]()
 
     // MARK:- View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        platformArray = ["iOS", "Android", "Web"]
-        projectArray = ["Controllex-iOS", "Controllex-Android"]
         segmentControl.selectedSegment = kPlatformIndex
         segmentControlValueChanged(segmentControl)
     }
 
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        
+        relodDetails()
+    }
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
@@ -55,13 +59,29 @@ class MTCHomeViewController: NSViewController, NSTableViewDataSource, NSTableVie
     }
  
     
+    // MARK:- Custom Methods
+
+    func projectList() {
+        projectsArray = MTCDataManager.sharedManager.fetchProjectList(context: kAppDelegate.managedObjectContext)!
+    }
+    
+    func domainList() {
+        domainArray = MTCDataManager.sharedManager.fetchDomainList(context: kAppDelegate.managedObjectContext)!
+    }
+    
+    func relodDetails() {
+        projectList()
+        domainList()
+        tableView.reloadData()
+    }
+    
     // MARK:- TableView Datasource Methods
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         if segmentControl.selectedSegment == kPlatformIndex {
-            return platformArray.count
+            return domainArray.count
         } else if segmentControl.selectedSegment == kProjectIndex {
-            return projectArray.count
+            return projectsArray.count
         }
         
         return 0
@@ -71,9 +91,11 @@ class MTCHomeViewController: NSViewController, NSTableViewDataSource, NSTableVie
         let cell = tableView.make(withIdentifier: MTCHomeListCellView.kCellIdentifier, owner: self) as! MTCHomeListCellView
         var detailsValue = ""
         if segmentControl.selectedSegment == kPlatformIndex {
-            detailsValue = platformArray[row]
+            let domain = domainArray[row]
+            detailsValue = domain.domainName!
         } else if segmentControl.selectedSegment == kProjectIndex {
-            detailsValue = projectArray[row]
+            let project = projectsArray[row]
+            detailsValue = project.projectName!
         }
         cell.homeListName.stringValue = detailsValue
         return cell

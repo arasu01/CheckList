@@ -18,9 +18,9 @@
         <attribute name="scenarioDescription" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Features" positionX="-234" positionY="-108" width="128" height="73"/>
-        <element name="Scenarios" positionX="-324" positionY="63" width="128" height="58"/>
         <element name="Domain" positionX="-20" positionY="-162" width="128" height="73"/>
+        <element name="Features" positionX="-234" positionY="-108" width="128" height="75"/>
         <element name="Projects" positionX="25" positionY="-0" width="128" height="103"/>
+        <element name="Scenarios" positionX="-324" positionY="63" width="128" height="58"/>
     </elements>
 </model>

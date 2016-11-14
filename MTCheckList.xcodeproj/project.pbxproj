@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC5CCD8D1DD98CFA009A598D /* MTCConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CCD8C1DD98CFA009A598D /* MTCConstant.swift */; };
 		ECBCB1431DD6F453008EA184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECBCB1421DD6F453008EA184 /* Assets.xcassets */; };
 		ECBCB1461DD6F45E008EA184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECBCB1441DD6F45E008EA184 /* Main.storyboard */; };
 		ECBCB1481DD6F468008EA184 /* MTCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCB1471DD6F468008EA184 /* MTCHomeViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC5CCD8C1DD98CFA009A598D /* MTCConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCConstant.swift; sourceTree = "<group>"; };
 		ECBCB1281DD6EC08008EA184 /* MTCheckList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTCheckList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBCB1371DD6EC08008EA184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECBCB1421DD6F453008EA184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				ECBCB17A1DD778F5008EA184 /* MTCDataManager.swift */,
+				EC5CCD8C1DD98CFA009A598D /* MTCConstant.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				ECBCB1541DD6FD50008EA184 /* MTCNewViewController.swift in Sources */,
 				ECBCB1751DD77818008EA184 /* Projects+CoreDataClass.swift in Sources */,
 				ECBCB1721DD77818008EA184 /* Domain+CoreDataProperties.swift in Sources */,
+				EC5CCD8D1DD98CFA009A598D /* MTCConstant.swift in Sources */,
 				ECBCB14C1DD6F4A3008EA184 /* MTCheckList.xcdatamodeld in Sources */,
 				ECBCB1741DD77818008EA184 /* Features+CoreDataProperties.swift in Sources */,
 				ECBCB1481DD6F468008EA184 /* MTCHomeViewController.swift in Sources */,
